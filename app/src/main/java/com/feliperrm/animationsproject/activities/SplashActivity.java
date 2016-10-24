@@ -80,7 +80,7 @@ public class SplashActivity extends BaseActivity {
         PropertyValuesHolder dot1Y = PropertyValuesHolder.ofFloat(dot1.TRANSLATION_Y, -30.0f);
         PropertyValuesHolder dot1X = PropertyValuesHolder.ofFloat(dot1.TRANSLATION_X, 0);
         ObjectAnimator dot1anim = ObjectAnimator.ofPropertyValuesHolder(dot1, dot1X, dot1Y);
-        dot1anim.setRepeatCount(-1);
+        dot1anim.setRepeatCount(ObjectAnimator.INFINITE);
         dot1anim.setRepeatMode(ValueAnimator.REVERSE);
         dot1anim.setDuration(500);
         dot1anim.setInterpolator(new AccelerateDecelerateInterpolator());
@@ -89,7 +89,7 @@ public class SplashActivity extends BaseActivity {
         PropertyValuesHolder dot2Y = PropertyValuesHolder.ofFloat(dot2.TRANSLATION_Y, -30.0f);
         PropertyValuesHolder dot2X = PropertyValuesHolder.ofFloat(dot2.TRANSLATION_X, 0);
         ObjectAnimator dot2Anim = ObjectAnimator.ofPropertyValuesHolder(dot2, dot2X, dot2Y);
-        dot2Anim.setRepeatCount(-1);
+        dot2Anim.setRepeatCount(ObjectAnimator.INFINITE);
         dot2Anim.setRepeatMode(ValueAnimator.REVERSE);
         dot2Anim.setDuration(500);
         dot2Anim.setStartDelay(150);
@@ -99,7 +99,7 @@ public class SplashActivity extends BaseActivity {
         PropertyValuesHolder dot3Y = PropertyValuesHolder.ofFloat(dot3.TRANSLATION_Y, -30.0f);
         PropertyValuesHolder dot3X = PropertyValuesHolder.ofFloat(dot3.TRANSLATION_X, 0);
         ObjectAnimator dot3anim = ObjectAnimator.ofPropertyValuesHolder(dot3, dot3X, dot3Y);
-        dot3anim.setRepeatCount(-1);
+        dot3anim.setRepeatCount(ObjectAnimator.INFINITE);
         dot3anim.setRepeatMode(ValueAnimator.REVERSE);
         dot3anim.setDuration(500);
         dot3anim.setStartDelay(250);
