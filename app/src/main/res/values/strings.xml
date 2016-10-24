@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Animations Project</string>
+    <string name="loading">Loading</string>
+    <string name="video_durantion">Video Duration - </string>
+    <string name="watch_video">Watch Video</string>
+    <string name="loading_video">Loading video...</string>
+    <string name="erro_download_title">Error Downloading Content</string>
+    <string name="error_download_body">Something bad happened while trying to download the data! Please check your Internet connection and try again!</string>
+    <string name="ok">Ok</string>
+    <string name="splash_text">Source code available at\nhttps://github.com/FelipeRRM/Upcoming-Movies</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feliperrm.animationsproject.activities.SplashActivity"
+    android:background="@color/colorPrimary"
+    android:animateLayoutChanges="true"
+    >
+
+    <ImageView
+        android:transitionName="logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:id="@+id/logo"
+        />
+
+    <LinearLayout
+        android:id="@+id/loadingParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/loading_text"
+            android:text="@string/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDot1"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            />
+
+        <TextView
+            android:id="@+id/txtDot2"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            />
+
+        <TextView
+            android:id="@+id/txtDot3"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginBottom="7dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="@string/splash_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

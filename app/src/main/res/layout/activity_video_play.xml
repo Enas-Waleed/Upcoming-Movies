@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feliperrm.animationsproject.activities.VideoPlayActivity"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <VideoView
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/videoLoading"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Large"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/videoLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_video"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/loadingText"
+        />
+
+</RelativeLayout>
